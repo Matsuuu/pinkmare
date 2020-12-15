@@ -8,6 +8,25 @@ The aim of Pinkmare was to add a dash of bright red colors to the theme, while c
 
 ![Pinkmare example](./pinkmare.png)
 
+# Installation
+
+```vim
+Plug 'matsuuu/pinkmare'
+```
+
+# Usage
+
+```vim
+set termguicolors
+colorscheme pinkmare
+```
+
+# Inspirations
+
+[Miramare](https://github.com/franbach/miramare)
+
+[PinkCatBoo](https://github.com/ftsamoyed/PinkCatBoo)
+
 # NOTE
 
 Pinkmare has been kind of hacked together from the miramare theme, and isn't currently fully finished.
