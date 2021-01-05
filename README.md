@@ -21,6 +21,8 @@ set termguicolors
 colorscheme pinkmare
 ```
 
+** Highly recommended to use [Vim Polyglot](https://github.com/sheerun/vim-polyglot) for syntax highlighting **
+
 # Inspirations
 
 [Miramare](https://github.com/franbach/miramare)
