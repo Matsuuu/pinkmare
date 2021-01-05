@@ -34,7 +34,7 @@ let s:palette = {
       \ 'bg1':        ['#472541',   '236',  'DarkGrey'],
       \ 'bg2':        ['#472541',   '237',  'DarkGrey'],
       \ 'bg3':        ['#472541',   '238',  'DarkGrey'],
-      \ 'bg4':        ['#472541',   '239',  'Grey'],
+      \ 'bg4':        ['#2d2f42',   '239',  'Grey'],
       \ 'bg_red':     ['#f2448b',   '52',   'DarkRed'],
       \ 'bg_green':   ['#333b2f',   '22',   'DarkGreen'],
       \ 'bg_blue':    ['#203a41',   '17',   'DarkBlue'],
