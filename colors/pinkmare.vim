@@ -1778,4 +1778,45 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
 endif
 " }}}
 
+" Treesitter_binds: {{{
+
+call s:HL('TSError', s:palette.red, s:palette.none, 'italic')
+call s:HL('TSPunctDelimiter', s:palette.orange, s:palette.none)
+call s:HL('TSPunctBracket', s:palette.fg, s:palette.none)
+call s:HL('TSPunctSpecial', s:palette.cyan, s:palette.none)
+call s:HL('TSConstant', s:palette.cyan, s:palette.none)
+call s:HL('TSConstBuiltin', s:palette.cyan, s:palette.none)
+call s:HL('TSConstMacro', s:palette.cyan, s:palette.none)
+call s:HL('TSVariableBuiltin', s:palette.bg_red, s:palette.none)
+call s:HL('TSString', s:palette.gold, s:palette.none)
+call s:HL('TSStringRegex', s:palette.cyan, s:palette.none)
+call s:HL('TSStringEscape', s:palette.cyan, s:palette.none)
+call s:HL('TSNumber', s:palette.gold, s:palette.none)
+call s:HL('TSFloat', s:palette.gold, s:palette.none)
+call s:HL('TSBoolean', s:palette.red, s:palette.none)
+call s:HL('TSFunction', s:palette.purple, s:palette.none)
+call s:HL('TSKeywordFunction', s:palette.bg_blue, s:palette.none)
+call s:HL('TSFuncBuiltin', s:palette.green, s:palette.none)
+call s:HL('TSFuncMacro', s:palette.green, s:palette.none)
+call s:HL('TSParameter', s:palette.blue, s:palette.none)
+call s:HL('TSParameterReference', s:palette.blue, s:palette.none)
+call s:HL('TSMethod', s:palette.yellow, s:palette.none)
+call s:HL('TSField', s:palette.yellow, s:palette.none)
+call s:HL('TSProperty', s:palette.blue, s:palette.none)
+call s:HL('TSConstructor', s:palette.yellow, s:palette.none)
+call s:HL('TSRepeat', s:palette.red, s:palette.none)
+call s:HL('TSException', s:palette.red, s:palette.none)
+call s:HL('TSLabel', s:palette.green, s:palette.none)
+call s:HL('TSOperator', s:palette.red, s:palette.none)
+call s:HL('TSKeyword', s:palette.purple, s:palette.none)
+call s:HL('TSType', s:palette.yellow, s:palette.none)
+call s:HL('TSTypeBuiltin', s:palette.orange, s:palette.none)
+call s:HL('TSStructure', s:palette.orange, s:palette.none)
+call s:HL('TSInclude', s:palette.red, s:palette.none)
+call s:HL('TSTag', s:palette.red, s:palette.none)
+call s:HL('TSTagDelimiter', s:palette.red, s:palette.none)
+call s:HL('TSVariable', s:palette.blue, s:palette.none)
+
+" }}}
+
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
