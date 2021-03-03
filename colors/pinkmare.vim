@@ -1813,7 +1813,7 @@ call s:HL('TSType', s:palette.yellow, s:palette.none)
 call s:HL('TSTypeBuiltin', s:palette.orange, s:palette.none)
 call s:HL('TSStructure', s:palette.orange, s:palette.none)
 call s:HL('TSInclude', s:palette.red, s:palette.none)
-call s:HL('TSTag', s:palette.red, s:palette.none)
+call s:HL('TSTag', s:palette.yellow, s:palette.none)
 call s:HL('TSTagDelimiter', s:palette.red, s:palette.none)
 call s:HL('TSVariable', s:palette.blue, s:palette.none)
 
