@@ -21,9 +21,9 @@ set termguicolors
 colorscheme pinkmare
 ```
 
-** Highly recommended to use [Vim Polyglot](https://github.com/sheerun/vim-polyglot) for syntax highlighting **
+**Highly recommended to use [Vim Polyglot](https://github.com/sheerun/vim-polyglot) for syntax highlighting**
 
-** PinkMare also supports [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) now!
+**PinkMare also supports [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) now!**
 
 # Inspirations
 
