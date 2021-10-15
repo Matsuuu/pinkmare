@@ -10,9 +10,15 @@ The aim of Pinkmare was to add a dash of bright red colors to the theme, while c
 
 # Installation
 
+### Vim
+
 ```vim
 Plug 'matsuuu/pinkmare'
 ```
+
+### VSCode
+
+[Pinkmare in the VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=Matsuuu.pinkmare)
 
 # Usage
 
