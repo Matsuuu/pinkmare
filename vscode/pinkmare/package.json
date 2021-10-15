@@ -1,0 +1,22 @@
+{
+    "name": "pinkmare",
+    "displayName": "pinkmare",
+    "publisher": "Matsuuu",
+    "description": "A nicely fresh and colorful, but zen color scheme",
+    "version": "0.0.2",
+    "engines": {
+        "vscode": "^0.10.5"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "pinkmare",
+                "uiTheme": "vs-dark",
+                "path": "./themes/pinkmare-color-theme.json"
+            }
+        ]
+    }
+}
