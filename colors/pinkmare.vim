@@ -1587,20 +1587,20 @@ highlight! link SignifySignDelete RedSign
 highlight! link SignifySignChangeDelete PurpleSign
 " }}}
 " scrooloose/nerdtree{{{
-highlight! link NERDTreeDir Green
-highlight! link NERDTreeDirSlash Cyan
-highlight! link NERDTreeOpenable Orange
-highlight! link NERDTreeClosable Orange
-highlight! link NERDTreeFile Fg
-highlight! link NERDTreeExecFile Yellow
-highlight! link NERDTreeUp Grey
-highlight! link NERDTreeCWD Cyan
-highlight! link NERDTreeHelp LightGrey
-highlight! link NERDTreeToggleOn Green
-highlight! link NERDTreeToggleOff Red
-highlight! link NERDTreeFlags Orange
-highlight! link NERDTreeLinkFile Grey
-highlight! link NERDTreeLinkTarget Green
+call s:HL('NERDTreeDir', s:palette.fg, s:palette.none)
+call s:HL('NERDTreeDirSlash', s:palette.fg, s:palette.none)
+call s:HL('NERDTreeOpenable', s:palette.fg, s:palette.none)
+call s:HL('NERDTreeClosable', s:palette.bg_red, s:palette.none)
+call s:HL('NERDTreeFile', s:palette.fg, s:palette.none)
+call s:HL('NERDTreeExecFile', s:palette.bg_red, s:palette.none)
+call s:HL('NERDTreeUp', s:palette.grey, s:palette.none)
+call s:HL('NERDTreeCWD', s:palette.bg_red, s:palette.none)
+call s:HL('NERDTreeHelp', s:palette.light_grey, s:palette.none)
+call s:HL('NERDTreeToggleOn', s:palette.fg, s:palette.none)
+call s:HL('NERDTreeToggleOff', s:palette.bg_red, s:palette.none)
+call s:HL('NERDTreeFlags', s:palette.orange, s:palette.none)
+call s:HL('NERDTreeLinkFile', s:palette.grey, s:palette.none)
+call s:HL('NERDTreeLinkTarget', s:palette.green, s:palette.none)
 " }}}
 " justinmk/vim-dirvish{{{
 highlight! link DirvishPathTail Cyan
