@@ -32,8 +32,8 @@ let s:configuration.current_word = get(g:, 'pinkmare_current_word', get(g:, 'pin
 let s:palette = {
       \ 'bg0':        ['#202330',   '235',  'Black'],
       \ 'bg1':        ['#472541',   '236',  'DarkGrey'],
-      \ 'bg2':        ['#472541',   '237',  'DarkGrey'],
-      \ 'bg3':        ['#472541',   '238',  'DarkGrey'],
+      \ 'bg2':        ['#242021',   '237',  'DarkGrey'],
+      \ 'bg3':        ['#242021',   '238',  'DarkGrey'],
       \ 'bg4':        ['#2d2f42',   '239',  'Grey'],
       \ 'bg_red':     ['#f2448b',   '52',   'DarkRed'],
       \ 'bg_green':   ['#333b2f',   '22',   'DarkGreen'],
