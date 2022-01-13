@@ -1819,4 +1819,25 @@ call s:HL('TSVariable', s:palette.blue, s:palette.none)
 
 " }}}
 
-" vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
+" nvim-cmp binds: {{{
+" gray
+highlight! CmpItemAbbrDeprecated guibg=NONE gui=strikethrough guifg=#808080
+" blue
+call s:HL('CmpItemAbbrMatch', s:palette.blue, s:palette.none)
+call s:HL('CmpItemAbbrMatchFuzzy', s:palette.blue, s:palette.none)
+" light blue
+call s:HL('CmpItemKindVariable', s:palette.purple, s:palette.none)
+call s:HL('CmpItemKindInterface', s:palette.purple, s:palette.none)
+call s:HL('CmpItemKindText', s:palette.purple, s:palette.none)
+" pink
+call s:HL('CmpItemKindFunction', s:palette.bg_red, s:palette.none)
+call s:HL('CmpItemKindMethod', s:palette.bg_red, s:palette.none)
+" front
+call s:HL('CmpItemKindKeyword', s:palette.cyan, s:palette.none)
+call s:HL('CmpItemKindProperty', s:palette.cyan, s:palette.none)
+call s:HL('CmpItemKindUnit', s:palette.cyan, s:palette.none)
+
+call s:HL('CmpItemKindField', s:palette.orange, s:palette.none)
+" }}}
+
+"vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
