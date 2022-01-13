@@ -1826,17 +1826,18 @@ highlight! CmpItemAbbrDeprecated guibg=NONE gui=strikethrough guifg=#808080
 call s:HL('CmpItemAbbrMatch', s:palette.blue, s:palette.none)
 call s:HL('CmpItemAbbrMatchFuzzy', s:palette.blue, s:palette.none)
 " light blue
-call s:HL('CmpItemKindVariable', s:palette.purple, s:palette.none)
+call s:HL('CmpItemKindVariable', s:palette.blue, s:palette.none)
 call s:HL('CmpItemKindInterface', s:palette.purple, s:palette.none)
-call s:HL('CmpItemKindText', s:palette.purple, s:palette.none)
-" pink
-call s:HL('CmpItemKindFunction', s:palette.bg_red, s:palette.none)
-call s:HL('CmpItemKindMethod', s:palette.bg_red, s:palette.none)
+call s:HL('CmpItemKindText', s:palette.gold, s:palette.none)
+" yellow
+call s:HL('CmpItemKindFunction', s:palette.purple, s:palette.none)
+call s:HL('CmpItemKindMethod', s:palette.yellow, s:palette.none)
 " front
 call s:HL('CmpItemKindKeyword', s:palette.cyan, s:palette.none)
-call s:HL('CmpItemKindProperty', s:palette.cyan, s:palette.none)
+call s:HL('CmpItemKindProperty', s:palette.blue, s:palette.none)
 call s:HL('CmpItemKindUnit', s:palette.cyan, s:palette.none)
 
+call s:HL("CmpItemKindClass", s:palette.yellow, s:palette.none)
 call s:HL('CmpItemKindField', s:palette.orange, s:palette.none)
 " }}}
 
