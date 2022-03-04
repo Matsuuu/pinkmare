@@ -1,26 +1,32 @@
 {
-  "name": "pinkmare",
-  "displayName": "pinkmare",
-  "publisher": "Matsuuu",
-  "description": "A nicely fresh and colorful, but zen color scheme",
-  "version": "0.0.3",
-  "engines": {
-    "vscode": "^0.10.5"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "pinkmare",
-        "uiTheme": "vs-dark",
-        "path": "./themes/pinkmare-color-theme.json"
-      }
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Matsuuu/pinkmare"
-  }
+	"name": "pinkmare",
+	"displayName": "pinkmare",
+	"publisher": "Matsuuu",
+	"description": "A nicely fresh and colorful, but zen color scheme",
+	"version": "0.4.0",
+	"engines": {
+		"vscode": "^0.10.5"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "pinkmare",
+				"uiTheme": "vs-dark",
+				"path": "./themes/pinkmare-color-theme.json"
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Matsuuu/pinkmare"
+	},
+	"__metadata": {
+		"id": "89a9561f-42b2-49b1-a380-ee3ff1746332",
+		"publisherDisplayName": "Matsuuu",
+		"publisherId": "9b72290d-f2c9-49fe-b022-6038024cd7b9",
+		"isPreReleaseVersion": false
+	}
 }
