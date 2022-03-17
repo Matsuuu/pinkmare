@@ -11,7 +11,7 @@ highlight clear
 if exists('syntax_on')
   syntax reset
 endif
-set background=dark
+set background=light
 
 let s:t_Co = exists('&t_Co') && !empty(&t_Co) && &t_Co > 1 ? &t_Co : 2
 
@@ -29,30 +29,59 @@ let s:configuration.cursor = get(g:, 'pinkmare_cursor', 'auto')
 let s:configuration.current_word = get(g:, 'pinkmare_current_word', get(g:, 'pinkmare_transparent_background', 0) == 0 ? 'grey background' : 'bold')
 " }}}
 " Palette: {{{
-let s:palette = {
-      \ 'bg0':        ['#202330',   '235',  'Black'],
-      \ 'bg1':        ['#472541',   '236',  'DarkGrey'],
-      \ 'bg2':        ['#242021',   '237',  'DarkGrey'],
-      \ 'bg3':        ['#242021',   '238',  'DarkGrey'],
-      \ 'bg4':        ['#2d2f42',   '239',  'Grey'],
-      \ 'bg_red':     ['#f2448b',   '52',   'DarkRed'],
-      \ 'bg_green':   ['#333b2f',   '22',   'DarkGreen'],
-      \ 'bg_blue':    ['#203a41',   '17',   'DarkBlue'],
-      \ 'fg':         ['#FAE8B6',   '223',  'White'],
-      \ 'red':        ['#FF38A2',   '167',  'Red'],
-      \ 'orange':     ['#ffb347',   '208',  'Red'],
-      \ 'yellow':     ['#ffc85b',   '214',  'Yellow'],
-      \ 'green':      ['#9cd162',   '108',  'Green'],
-      \ 'cyan':       ['#87c095',   '108',  'Cyan'],
-      \ 'blue':       ['#eba4ac',   '109',  'Blue'],
-      \ 'purple':     ['#d9bcef',   '175',  'Magenta'],
-      \ 'grey':       ['#444444',   '245',  'LightGrey'],
-      \ 'light_grey': ['#6D7A72',   '245',  'LightGrey'],
-      \ 'gold':       ['#fff0f5',   '214',  'Yellow'],
-      \ 'none':       ['NONE',      'NONE', 'NONE']
-      \ }
+if &background ==# 'dark' 
+    let s:palette = {
+          \ 'bg0':        ['#202330',   '235',  'Black'],
+          \ 'bg1':        ['#472541',   '236',  'DarkGrey'],
+          \ 'bg2':        ['#242021',   '237',  'DarkGrey'],
+          \ 'bg3':        ['#242021',   '238',  'DarkGrey'],
+          \ 'bg4':        ['#2d2f42',   '239',  'Grey'],
+          \ 'bg_red':     ['#f2448b',   '52',   'DarkRed'],
+          \ 'bg_green':   ['#333b2f',   '22',   'DarkGreen'],
+          \ 'bg_blue':    ['#203a41',   '17',   'DarkBlue'],
+          \ 'fg':         ['#FAE8B6',   '223',  'White'],
+          \ 'red':        ['#FF38A2',   '167',  'Red'],
+          \ 'orange':     ['#ffb347',   '208',  'Red'],
+          \ 'yellow':     ['#ffc85b',   '214',  'Yellow'],
+          \ 'green':      ['#9cd162',   '108',  'Green'],
+          \ 'cyan':       ['#87c095',   '108',  'Cyan'],
+          \ 'blue':       ['#eba4ac',   '109',  'Blue'],
+          \ 'purple':     ['#d9bcef',   '175',  'Magenta'],
+          \ 'grey':       ['#444444',   '245',  'LightGrey'],
+          \ 'light_grey': ['#6D7A72',   '245',  'LightGrey'],
+          \ 'gold':       ['#fff0f5',   '214',  'Yellow'],
+          \ 'none':       ['NONE',      'NONE', 'NONE']
+          \ }
 
-call extend(s:palette, s:configuration.palette)
+    call extend(s:palette, s:configuration.palette)
+endif
+
+if &background ==# 'light' 
+    let s:palette = {
+          \ 'bg0':        ['#202330',   '235',  'Black'],
+          \ 'bg1':        ['#472541',   '236',  'DarkGrey'],
+          \ 'bg2':        ['#242021',   '237',  'DarkGrey'],
+          \ 'bg3':        ['#242021',   '238',  'DarkGrey'],
+          \ 'bg4':        ['#2d2f42',   '239',  'Grey'],
+          \ 'bg_red':     ['#f2448b',   '52',   'DarkRed'],
+          \ 'bg_green':   ['#333b2f',   '22',   'DarkGreen'],
+          \ 'bg_blue':    ['#203a41',   '17',   'DarkBlue'],
+          \ 'fg':         ['#FAE8B6',   '223',  'White'],
+          \ 'red':        ['#FF38A2',   '167',  'Red'],
+          \ 'orange':     ['#ffb347',   '208',  'Red'],
+          \ 'yellow':     ['#ffc85b',   '214',  'Yellow'],
+          \ 'green':      ['#9cd162',   '108',  'Green'],
+          \ 'cyan':       ['#87c095',   '108',  'Cyan'],
+          \ 'blue':       ['#eba4ac',   '109',  'Blue'],
+          \ 'purple':     ['#d9bcef',   '175',  'Magenta'],
+          \ 'grey':       ['#444444',   '245',  'LightGrey'],
+          \ 'light_grey': ['#6D7A72',   '245',  'LightGrey'],
+          \ 'gold':       ['#fff0f5',   '214',  'Yellow'],
+          \ 'none':       ['NONE',      'NONE', 'NONE']
+          \ }
+
+    call extend(s:palette, s:configuration.palette)
+endif
 " }}}
 " Function: {{{
 " call s:HL(group, foreground, background)
