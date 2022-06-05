@@ -234,6 +234,7 @@ call s:HL('ToolbarLine', s:palette.none, s:palette.grey)
 call s:HL('ToolbarButton', s:palette.fg, s:palette.bg0, 'bold')
 call s:HL('QuickFixLine', s:palette.blue, s:palette.bg1)
 call s:HL('Debug', s:palette.yellow, s:palette.none)
+call s:HL('DebugBreakpointLine', s:palette.bg2, s:palette.green)
 " }}}
 " Syntax: {{{
 call s:HL('Boolean', s:palette.cyan, s:palette.none)
