@@ -8,11 +8,10 @@ const style = "--card-color: " + title;
 ---
 
 <li class="link-card" style={style}>
-	<button>
+	<button data-color={title}>
         <div class="block"></div>
 		<h2>
 			{title}
-			<span>&rarr;</span>
 		</h2>
 	</button>
 </li>
@@ -71,3 +70,19 @@ const style = "--card-color: " + title;
 		color: rgb(var(--accent));
 	}
 </style>
+
+<script>
+const buttons = document.querySelectorAll(".link-card > button");
+buttons.forEach(but => {
+    but.addEventListener("click", () => {
+        const color = but.dataset.color;
+        navigator.clipboard.writeText(color);
+        const h2 = but.querySelector("h2");
+        h2.innerText = "Copied!";
+        but.blur();
+        setTimeout(() => {
+            h2.innerText = color;
+        }, 1000)
+    })
+})
+</script>
