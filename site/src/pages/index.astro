@@ -1,28 +1,39 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+
+const colors = [
+    '#202330',
+    '#472541',
+    '#472541',
+    '#472541',
+    '#2d2f42',
+    '#f2448b',
+    '#333b2f',
+    '#203a41',
+    '#FAE8B6',
+    '#FF38A2',
+    '#ffb347',
+    '#ffc85b',
+    '#9cd162',
+    '#87c095',
+    '#eba4ac',
+    '#d9bcef',
+    '#444444',
+    '#6D7A72',
+    '#fff0f5'
+]
 ---
 
 <Layout title="Pinkmare">
 	<main>
 		<h1><span class="text-gradient">Pinkmare</span></h1>
 		<ul role="list" class="link-card-grid">
+        {colors.map(color => (
 			<Card
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+				title={color}
 			/>
-			<Card
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
+        ))}
 		</ul>
 	</main>
 </Layout>
