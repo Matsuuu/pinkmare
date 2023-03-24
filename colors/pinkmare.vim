@@ -1845,7 +1845,7 @@ call s:HL('@constructor', s:palette.yellow, s:palette.none)
 
 call s:HL('@conditional', s:palette.red, s:palette.none)
 call s:HL('@repeat', s:palette.red, s:palette.none)
-call s:HL('@label', s:palette.red, s:palette.none)
+call s:HL('@label', s:palette.orange, s:palette.none)
 
 call s:HL('@keyword', s:palette.red, s:palette.none)
 call s:HL('@keyword.function', s:palette.red, s:palette.none)
@@ -1883,6 +1883,8 @@ call s:HL('@interface', s:palette.red, s:palette.none)
 call s:HL('@modifier', s:palette.red, s:palette.none)
 call s:HL('@regexp', s:palette.cyan, s:palette.none)
 call s:HL('@typeParameter', s:palette.cyan, s:palette.none)
+call s:HL('@decorator', s:palette.cyan, s:palette.none)
+
 call s:HL('@decorator', s:palette.cyan, s:palette.none)
 
 "  -------------------
