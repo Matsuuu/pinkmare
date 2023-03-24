@@ -1810,6 +1810,83 @@ endif
 
 " Treesitter_binds: {{{
 
+" -------------
+
+call s:HL('@error', s:palette.red, s:palette.none)
+call s:HL('@punctuation.delimiter', s:palette.orange, s:palette.none)
+call s:HL('@punctuation.bracket', s:palette.fg, s:palette.none)
+call s:HL('@punctuation.special', s:palette.fg, s:palette.none)
+
+call s:HL('@constant', s:palette.yellow, s:palette.none)
+call s:HL('@constant.builtin', s:palette.yellow, s:palette.none)
+call s:HL('@symbol', s:palette.red, s:palette.none)
+
+call s:HL('@constant.macro', s:palette.purple, s:palette.none)
+call s:HL('@string.regex', s:palette.gold, s:palette.none)
+call s:HL('@string', s:palette.gold, s:palette.none)
+call s:HL('@string.escape', s:palette.yellow, s:palette.none)
+call s:HL('@character', s:palette.yellow, s:palette.none)
+call s:HL('@number', s:palette.gold, s:palette.none)
+call s:HL('@boolean', s:palette.red, s:palette.none)
+call s:HL('@float', s:palette.gold, s:palette.none)
+call s:HL('@annotation', s:palette.yellow, s:palette.none)
+call s:HL('@attribute', s:palette.yellow, s:palette.none)
+call s:HL('@namespace', s:palette.orange, s:palette.none)
+
+call s:HL('@function.builtin', s:palette.purple, s:palette.none)
+call s:HL('@function', s:palette.purple, s:palette.none)
+call s:HL('@function.macro', s:palette.purple, s:palette.none)
+call s:HL('@parameter', s:palette.blue, s:palette.none)
+call s:HL('@parameter.reference', s:palette.blue, s:palette.none)
+call s:HL('@method', s:palette.purple, s:palette.none)
+call s:HL('@field', s:palette.blue, s:palette.none)
+call s:HL('@property', s:palette.blue, s:palette.none)
+call s:HL('@constructor', s:palette.yellow, s:palette.none)
+
+call s:HL('@conditional', s:palette.red, s:palette.none)
+call s:HL('@repeat', s:palette.red, s:palette.none)
+call s:HL('@label', s:palette.red, s:palette.none)
+
+call s:HL('@keyword', s:palette.red, s:palette.none)
+call s:HL('@keyword.function', s:palette.red, s:palette.none)
+call s:HL('@keyword.operator', s:palette.red, s:palette.none)
+call s:HL('@operator', s:palette.red, s:palette.none)
+call s:HL('@exception', s:palette.red, s:palette.none)
+call s:HL('@type', s:palette.yellow, s:palette.none)
+call s:HL('@type.builtin', s:palette.orange, s:palette.none)
+call s:HL('@type.qualifier', s:palette.red, s:palette.none)
+call s:HL('@structure', s:palette.yellow, s:palette.none)
+call s:HL('@include', s:palette.red, s:palette.none)
+
+call s:HL('@variable', s:palette.blue, s:palette.none)
+call s:HL('@variable.builtin', s:palette.red, s:palette.none)
+
+call s:HL('@text', s:palette.gold, s:palette.none)
+call s:HL('@text.strong', s:palette.gold, s:palette.none)
+call s:HL('@text.emphasis', s:palette.gold, s:palette.none)
+call s:HL('@text.underline', s:palette.gold, s:palette.none)
+call s:HL('@text.title', s:palette.gold, s:palette.none)
+call s:HL('@text.literal', s:palette.gold, s:palette.none)
+call s:HL('@text.uri', s:palette.gold, s:palette.none)
+call s:HL('@text.reference', s:palette.gold, s:palette.none)
+
+call s:HL('@tag', s:palette.purple, s:palette.none)
+call s:HL('@tag.attribute', s:palette.purple, s:palette.none)
+call s:HL('@tag.delimiter', s:palette.purple, s:palette.none)
+
+call s:HL('@class', s:palette.red, s:palette.none)
+call s:HL('@struct', s:palette.red, s:palette.none)
+call s:HL('@enum', s:palette.red, s:palette.none)
+call s:HL('@enumMember', s:palette.red, s:palette.none)
+call s:HL('@event', s:palette.red, s:palette.none)
+call s:HL('@interface', s:palette.red, s:palette.none)
+call s:HL('@modifier', s:palette.red, s:palette.none)
+call s:HL('@regexp', s:palette.cyan, s:palette.none)
+call s:HL('@typeParameter', s:palette.cyan, s:palette.none)
+call s:HL('@decorator', s:palette.cyan, s:palette.none)
+
+"  -------------------
+
 call s:HL('TSError', s:palette.red, s:palette.none, 'italic')
 call s:HL('TSPunctDelimiter', s:palette.orange, s:palette.none)
 call s:HL('TSPunctBracket', s:palette.fg, s:palette.none)
