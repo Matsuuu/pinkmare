@@ -1870,8 +1870,8 @@ call s:HL('@text.literal', s:palette.gold, s:palette.none)
 call s:HL('@text.uri', s:palette.gold, s:palette.none)
 call s:HL('@text.reference', s:palette.gold, s:palette.none)
 
-call s:HL('@tag', s:palette.purple, s:palette.none)
-call s:HL('@tag.attribute', s:palette.purple, s:palette.none)
+call s:HL('@tag', s:palette.yellow, s:palette.none)
+call s:HL('@tag.attribute', s:palette.blue, s:palette.none)
 call s:HL('@tag.delimiter', s:palette.purple, s:palette.none)
 
 call s:HL('@class', s:palette.red, s:palette.none)
@@ -1883,8 +1883,6 @@ call s:HL('@interface', s:palette.red, s:palette.none)
 call s:HL('@modifier', s:palette.red, s:palette.none)
 call s:HL('@regexp', s:palette.cyan, s:palette.none)
 call s:HL('@typeParameter', s:palette.cyan, s:palette.none)
-call s:HL('@decorator', s:palette.cyan, s:palette.none)
-
 call s:HL('@decorator', s:palette.cyan, s:palette.none)
 
 "  -------------------
