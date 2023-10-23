@@ -48,6 +48,29 @@ Feel free to contribute to the development of Pinkmare
 
 Colorcodes used by pinkmare
 
+- ![bg0 - Black](https://colors.pics/202330?x=40&y=40) bg0 - Black
+- ![bg1 - DarkGrey](https://colors.pics/472541?x=40&y=40) bg1 - DarkGrey
+- ![bg2 - DarkGrey](https://colors.pics/472541?x=40&y=40) bg2 - DarkGrey
+- ![bg3 - DarkGrey](https://colors.pics/472541?x=40&y=40) bg3 - DarkGrey
+- ![bg4 - Grey](https://colors.pics/2d2f42?x=40&y=40) bg4 - Grey
+- ![bg_red - DarkRed](https://colors.pics/f2448b?x=40&y=40) bg_red - DarkRed
+- ![bg_green - DarkGreen](https://colors.pics/333b2f?x=40&y=40) bg_green - DarkGreen
+- ![bg_blue - DarkBlue](https://colors.pics/203a41?x=40&y=40) bg_blue - DarkBlue
+- ![fg - White](https://colors.pics/fae8b6?x=40&y=40) fg - White
+- ![red - Red](https://colors.pics/ff38a2?x=40&y=40) red - Red
+- ![orange - Orange](https://colors.pics/ffb347?x=40&y=40) orange - Orange
+- ![yellow - Yellow](https://colors.pics/ffc85b?x=40&y=40) yellow - Yellow
+- ![green - Green](https://colors.pics/9cd162?x=40&y=40) green - Green
+- ![cyan - Cyan](https://colors.pics/87c095?x=40&y=40) cyan - Cyan
+- ![blue - Blue](https://colors.pics/eba4ac?x=40&y=40) blue - Blue
+- ![purple - Purple](https://colors.pics/d9bcef?x=40&y=40) purple - Purple
+- ![grey - Grey](https://colors.pics/444444?x=40&y=40) grey - Grey
+- ![light_grey - LightGrey](https://colors.pics/6d7a72?x=40&y=40) light_grey - LightGrey
+- ![gold - Gold](https://colors.pics/fff0f5?x=40&y=40) gold - Gold
+- ![none - NONE](https://colors.pics/ffffff?x=40&y=40) none - NONE
+
+
+
 ```vim
 let s:palette = {
       \ 'bg0':        ['#202330',   '235',  'Black'],
