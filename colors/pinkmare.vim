@@ -1850,7 +1850,7 @@ call s:HL('@repeat', s:palette.red, s:palette.none)
 call s:HL('@label', s:palette.orange, s:palette.none)
 
 call s:HL('@keyword', s:palette.red, s:palette.none)
-call s:HL('@keyword.function', s:palette.purple, s:palette.none)
+call s:HL('@keyword.function', s:palette.red, s:palette.none)
 call s:HL('@keyword.operator', s:palette.red, s:palette.none)
 call s:HL('@operator', s:palette.red, s:palette.none)
 call s:HL('@exception', s:palette.red, s:palette.none)
