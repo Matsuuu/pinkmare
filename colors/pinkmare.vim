@@ -50,6 +50,7 @@ if &background ==# 'dark'
           \ 'grey':       ['#444444',   '245',  'LightGrey'],
           \ 'light_grey': ['#6D7A72',   '245',  'LightGrey'],
           \ 'gold':       ['#fff0f5',   '214',  'Yellow'],
+          \ 'findme':     ['#4DB560',   '215',  'FindMe'],
           \ 'none':       ['NONE',      'NONE', 'NONE']
           \ }
 
@@ -77,6 +78,7 @@ if &background ==# 'light'
           \ 'grey':       ['#444444',   '245',  'LightGrey'],
           \ 'light_grey': ['#6D7A72',   '245',  'LightGrey'],
           \ 'gold':       ['#fff0f5',   '214',  'Yellow'],
+          \ 'findme':     ['#4DB560',   '215',  'FindMe'],
           \ 'none':       ['NONE',      'NONE', 'NONE']
           \ }
 
@@ -1884,6 +1886,23 @@ call s:HL('@modifier', s:palette.red, s:palette.none)
 call s:HL('@regexp', s:palette.cyan, s:palette.none)
 call s:HL('@typeParameter', s:palette.cyan, s:palette.none)
 call s:HL('@decorator', s:palette.cyan, s:palette.none)
+
+call s:HL('@lsp.type.class', s:palette.orange, s:palette.none)
+call s:HL('@lsp.type.decorator', s:palette.cyan, s:palette.none)
+call s:HL('@lsp.type.enum', s:palette.red, s:palette.none)
+call s:HL('@lsp.type.enumMember', s:palette.red, s:palette.none)
+call s:HL('@lsp.type.function', s:palette.purple, s:palette.none)
+call s:HL('@lsp.type.interface', s:palette.red, s:palette.none)
+call s:HL('@lsp.type.macro', s:palette.purple, s:palette.none)
+call s:HL('@lsp.type.method', s:palette.purple, s:palette.none)
+call s:HL('@lsp.type.namespace', s:palette.orange, s:palette.none)
+call s:HL('@lsp.type.parameter', s:palette.blue, s:palette.none)
+call s:HL('@lsp.type.property', s:palette.blue, s:palette.none)
+call s:HL('@lsp.type.struct', s:palette.red, s:palette.none)
+call s:HL('@lsp.type.type', s:palette.yellow, s:palette.none)
+call s:HL('@lsp.type.typeParameter', s:palette.cyan, s:palette.none)
+call s:HL('@lsp.type.variable', s:palette.blue, s:palette.none)
+
 
 "  -------------------
 
