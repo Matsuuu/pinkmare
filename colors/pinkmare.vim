@@ -1818,7 +1818,7 @@ call s:HL('@punctuation.bracket', s:palette.fg, s:palette.none)
 call s:HL('@punctuation.special', s:palette.fg, s:palette.none)
 
 call s:HL('@constant', s:palette.yellow, s:palette.none)
-call s:HL('@constant.builtin', s:palette.yellow, s:palette.none)
+call s:HL('@constant.builtin', s:palette.cyan, s:palette.none)
 call s:HL('@symbol', s:palette.red, s:palette.none)
 
 call s:HL('@constant.macro', s:palette.purple, s:palette.none)
@@ -1848,7 +1848,7 @@ call s:HL('@repeat', s:palette.red, s:palette.none)
 call s:HL('@label', s:palette.orange, s:palette.none)
 
 call s:HL('@keyword', s:palette.red, s:palette.none)
-call s:HL('@keyword.function', s:palette.red, s:palette.none)
+call s:HL('@keyword.function', s:palette.purple, s:palette.none)
 call s:HL('@keyword.operator', s:palette.red, s:palette.none)
 call s:HL('@operator', s:palette.red, s:palette.none)
 call s:HL('@exception', s:palette.red, s:palette.none)
