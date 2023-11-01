@@ -20,6 +20,7 @@ let g:colors_name = 'pinkmare'
 " Configuration: {{{
 let s:configuration = {}
 let s:configuration.palette = get(g:, 'pinkmare_palette', {})
+let s:configuration.overwrite_groups = get(g:, 'pinkmare_overwrite_groups', {})
 let s:configuration.transparent_background = get(g:, 'pinkmare_transparent_background', 0)
 let s:configuration.disable_italic_comment = get(g:, 'pinkmare_disable_italic_comment', 0)
 let s:configuration.enable_italic_string = get(g:, 'pinkmare_enable_italic_string', 0)
@@ -94,10 +95,12 @@ endif
 
 if (has('termguicolors') && &termguicolors) || has('gui_running')  " guifg guibg gui cterm guisp
   function! s:HL(group, fg, bg, ...)
+    let l:fg = get(get(s:configuration.overwrite_groups, a:group, {}), 'fg', a:fg)
+    let l:bg = get(get(s:configuration.overwrite_groups, a:group, {}), 'bg', a:bg)
     let hl_string = [
           \ 'highlight', a:group,
-          \ 'guifg=' . a:fg[0],
-          \ 'guibg=' . a:bg[0],
+          \ 'guifg=' . l:fg[0],
+          \ 'guibg=' . l:bg[0],
           \ ]
     if a:0 >= 1
       if a:1 ==# 'undercurl'
@@ -118,10 +121,12 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')  " guifg guibg
   endfunction
 elseif s:t_Co >= 256  " ctermfg ctermbg cterm
   function! s:HL(group, fg, bg, ...)
+    let l:fg = get(get(s:configuration.overwrite_groups, a:group, {}), 'fg', a:fg)
+    let l:bg = get(get(s:configuration.overwrite_groups, a:group, {}), 'bg', a:bg)
     let hl_string = [
           \ 'highlight', a:group,
-          \ 'ctermfg=' . a:fg[1],
-          \ 'ctermbg=' . a:bg[1],
+          \ 'ctermfg=' . l:fg[1],
+          \ 'ctermbg=' . l:bg[1],
           \ ]
     if a:0 >= 1
       if a:1 ==# 'undercurl'
@@ -136,10 +141,12 @@ elseif s:t_Co >= 256  " ctermfg ctermbg cterm
   endfunction
 else  " ctermfg ctermbg cterm
   function! s:HL(group, fg, bg, ...)
+    let l:fg = get(get(s:configuration.overwrite_groups, a:group, {}), 'fg', a:fg)
+    let l:bg = get(get(s:configuration.overwrite_groups, a:group, {}), 'bg', a:bg)
     let hl_string = [
           \ 'highlight', a:group,
-          \ 'ctermfg=' . a:fg[2],
-          \ 'ctermbg=' . a:bg[2],
+          \ 'ctermfg=' . l:fg[2],
+          \ 'ctermbg=' . l:bg[2],
           \ ]
     if a:0 >= 1
       if a:1 ==# 'undercurl'
