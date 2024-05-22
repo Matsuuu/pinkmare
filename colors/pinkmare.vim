@@ -1809,6 +1809,15 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   " }}}
 endif
 " }}}
+"
+"
+"
+" Neovim binds: {{{
+
+call s:HL('NormalFloat', s:palette.fg, s:palette.bg3)
+call s:HL('FloatBorder', s:palette.fg, s:palette.fg)
+
+" }}}
 
 " Treesitter_binds: {{{
 
