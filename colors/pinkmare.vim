@@ -1764,12 +1764,6 @@ endif
 "
 "
 "
-" Neovim binds: {{{
-
-call s:HL('NormalFloat', s:palette.fg, s:palette.bg3)
-call s:HL('FloatBorder', s:palette.fg, s:palette.bg3)
-
-" }}}
 
 " Treesitter_binds: {{{
 
@@ -1927,6 +1921,21 @@ call s:HL('CmpItemKindUnit', s:palette.cyan, s:palette.none)
 
 call s:HL("CmpItemKindClass", s:palette.yellow, s:palette.none)
 call s:HL('CmpItemKindField', s:palette.orange, s:palette.none)
+" }}}
+"
+" Neovim binds: {{{
+
+call s:HL('NormalFloat', s:palette.fg, s:palette.bg3)
+call s:HL('DiagnosticFloatingHint', s:palette.gold, s:palette.bg3)
+call s:HL('DiagnosticFloatingInfo', s:palette.purple, s:palette.bg3)
+call s:HL('DiagnosticFloatingWarn', s:palette.yellow, s:palette.bg3)
+call s:HL('DiagnosticFloatingError', s:palette.red, s:palette.bg3)
+call s:HL('FloatBorder', s:palette.fg, s:palette.bg3)
+call s:HL('DiagnosticVirtualTextHint', s:palette.gold, s:palette.none)
+call s:HL('DiagnosticVirtualTextInfo', s:palette.purple, s:palette.none)
+call s:HL('DiagnosticVirtualTextWarn', s:palette.yellow, s:palette.none)
+call s:HL('DiagnosticVirtualTextError', s:palette.red, s:palette.none)
+
 " }}}
 
 "vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
