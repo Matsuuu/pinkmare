@@ -161,7 +161,7 @@ call s:HL('ModeMsg', s:palette.fg, s:palette.none, 'bold')
 call s:HL('MoreMsg', s:palette.blue, s:palette.none, 'bold')
 call s:HL('IncSearch', s:palette.none, s:palette.none, 'reverse')
 call s:HL('Search', s:palette.bg0, s:palette.red)
-call s:HL('MatchParen', s:palette.none, s:palette.none, 'reverse')
+call s:HL('MatchParen', s:palette.none, s:palette.bg1, 'bold')
 call s:HL('NonText', s:palette.grey, s:palette.none)
 call s:HL('Pmenu', s:palette.fg, s:palette.bg2)
 call s:HL('PmenuSbar', s:palette.none, s:palette.bg2)
@@ -1602,11 +1602,6 @@ highlight! link netrwList Cyan
 highlight! link netrwHelpCmd Blue
 highlight! link netrwCmdSep Grey
 highlight! link netrwVersion Orange
-" }}}
-" andymass/vim-matchup{{{
-call s:HL('MatchParenCur', s:palette.none, s:palette.none, 'bold')
-call s:HL('MatchWord', s:palette.none, s:palette.none, 'underline')
-call s:HL('MatchWordCur', s:palette.none, s:palette.none, 'underline')
 " }}}
 " easymotion/vim-easymotion {{{
 highlight! link EasyMotionTarget Search
