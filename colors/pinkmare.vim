@@ -38,7 +38,17 @@ let s:palette = pinkmare#get_palette()
 " E.g.:
 " call s:HL('Normal', s:palette.fg, s:palette.bg0)
 
-if (has('termguicolors') && &termguicolors) || has('gui_running')  " guifg guibg gui cterm guisp
+function! IsWSL()
+    let uname = substitute(system('uname'),'\n','','')
+    if uname == 'Linux'
+        let lines = readfile("/proc/version")
+        if lines[0] =~ "Microsoft"
+            return 1
+        endif
+    endif
+endfunction
+
+if (has('termguicolors') && &termguicolors) || has('gui_running' || IsWSL())  " guifg guibg gui cterm guisp
   function! s:HL(group, fg, bg, ...)
     let l:fg = get(get(s:configuration.overwrite_groups, a:group, {}), 'fg', a:fg)
     let l:bg = get(get(s:configuration.overwrite_groups, a:group, {}), 'bg', a:bg)
