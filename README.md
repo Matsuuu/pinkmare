@@ -8,6 +8,8 @@ The aim of Pinkmare was to add a dash of bright red colors to the theme, while c
 
 ![Pinkmare example](images/pinkmare.png)
 
+Background art: Far From Tomorrow, by Alena Aenami https://www.artstation.com/artwork/9eYa8L
+
 # Installation
 
 ### Vim
