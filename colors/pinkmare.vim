@@ -1942,5 +1942,8 @@ call s:HL('DiagnosticVirtualTextWarn', s:palette.yellow, s:palette.none)
 call s:HL('DiagnosticVirtualTextError', s:palette.red, s:palette.none)
 
 " }}}
+"
+" nvim dap colors
+call s:HL('DapStopped', s:palette.gold, s:palette.red)
 
 "vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
