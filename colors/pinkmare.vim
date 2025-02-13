@@ -1930,12 +1930,12 @@ call s:HL('CmpItemKindField', s:palette.orange, s:palette.none)
 "
 " Neovim binds: {{{
 
-call s:HL('NormalFloat', s:palette.fg, s:palette.bg3)
-call s:HL('DiagnosticFloatingHint', s:palette.gold, s:palette.bg3)
-call s:HL('DiagnosticFloatingInfo', s:palette.purple, s:palette.bg3)
-call s:HL('DiagnosticFloatingWarn', s:palette.yellow, s:palette.bg3)
-call s:HL('DiagnosticFloatingError', s:palette.red, s:palette.bg3)
-call s:HL('FloatBorder', s:palette.fg, s:palette.bg3)
+call s:HL('NormalFloat', s:palette.fg, s:palette.bg0)
+call s:HL('DiagnosticFloatingHint', s:palette.gold, s:palette.bg0)
+call s:HL('DiagnosticFloatingInfo', s:palette.purple, s:palette.bg0)
+call s:HL('DiagnosticFloatingWarn', s:palette.yellow, s:palette.bg0)
+call s:HL('DiagnosticFloatingError', s:palette.red, s:palette.bg0)
+call s:HL('FloatBorder', s:palette.fg, s:palette.bg0)
 call s:HL('DiagnosticVirtualTextHint', s:palette.gold, s:palette.none)
 call s:HL('DiagnosticVirtualTextInfo', s:palette.purple, s:palette.none)
 call s:HL('DiagnosticVirtualTextWarn', s:palette.yellow, s:palette.none)
