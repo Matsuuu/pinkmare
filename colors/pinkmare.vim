@@ -1946,4 +1946,25 @@ call s:HL('DiagnosticVirtualTextError', s:palette.red, s:palette.none)
 " nvim dap colors
 call s:HL('DapStopped', s:palette.gold, s:palette.red)
 
+call s:HL('WinBar', s:palette.red, s:palette.none)
+call s:HL('WinBarNC', s:palette.red, s:palette.none)
+
+call s:HL('DapUIStepOver', s:palette.cyan, s:palette.none)
+call s:HL('DapUIStepInto', s:palette.cyan, s:palette.none)
+call s:HL('DapUIStepBack', s:palette.cyan, s:palette.none)
+call s:HL('DapUIStepOut', s:palette.cyan, s:palette.none)
+
+call s:HL('DapUIStepOverNC', s:palette.cyan, s:palette.none)
+call s:HL('DapUIStepIntoNC', s:palette.cyan, s:palette.none)
+call s:HL('DapUIStepBackNC', s:palette.cyan, s:palette.none)
+call s:HL('DapUIStepOutNC', s:palette.cyan, s:palette.none)
+
+call s:HL('DapUIStop', s:palette.red, s:palette.none)
+call s:HL('DapUIStopNC', s:palette.red, s:palette.none)
+
+call s:HL('DapUIPlayPause', s:palette.green, s:palette.none)
+call s:HL('DapUIPlayPauseNC', s:palette.green, s:palette.none)
+call s:HL('DapUIRestart', s:palette.green, s:palette.none)
+call s:HL('DapUIRestartNC', s:palette.green, s:palette.none)
+
 "vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
