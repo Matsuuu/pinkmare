@@ -162,8 +162,8 @@ else
 endif
 call s:HL('DiffAdd', s:palette.none, s:palette.bg_green)
 call s:HL('DiffChange', s:palette.none, s:palette.bg_blue)
-call s:HL('DiffDelete', s:palette.none, s:palette.bg_red)
-call s:HL('DiffText', s:palette.none, s:palette.bg0, 'reverse')
+call s:HL('DiffDelete', s:palette.red, s:palette.none)
+call s:HL('DiffText', s:palette.none, s:palette.bg_blue)
 call s:HL('Directory', s:palette.green, s:palette.none)
 call s:HL('ErrorMsg', s:palette.red, s:palette.none, 'bold,underline')
 call s:HL('WarningMsg', s:palette.yellow, s:palette.none, 'bold')
@@ -1966,5 +1966,20 @@ call s:HL('DapUIPlayPause', s:palette.green, s:palette.none)
 call s:HL('DapUIPlayPauseNC', s:palette.green, s:palette.none)
 call s:HL('DapUIRestart', s:palette.green, s:palette.none)
 call s:HL('DapUIRestartNC', s:palette.green, s:palette.none)
+
+" MeanderingProgrammer/render-markdown.nvim
+call s:HL('@markup.heading.1.markdown', s:palette.red, s:palette.none)
+call s:HL('@markup.heading.2.markdown', s:palette.purple, s:palette.none)
+call s:HL('@markup.heading.3.markdown', s:palette.cyan, s:palette.none)
+call s:HL('@markup.heading.4.markdown', s:palette.blue, s:palette.none)
+call s:HL('@markup.heading.5.markdown', s:palette.green, s:palette.none)
+call s:HL('@markup.heading.6.markdown', s:palette.orange, s:palette.none)
+
+call s:HL('RenderMarkdownH1Bg', s:palette.red, s:palette.none, 'bold')
+call s:HL('RenderMarkdownH2Bg', s:palette.purple, s:palette.none, 'bold')
+call s:HL('RenderMarkdownH3Bg', s:palette.cyan, s:palette.none, 'bold')
+call s:HL('RenderMarkdownH4Bg', s:palette.blue, s:palette.none, 'bold')
+call s:HL('RenderMarkdownH5Bg', s:palette.green, s:palette.none, 'bold')
+call s:HL('RenderMarkdownH6Bg', s:palette.orange, s:palette.none, 'bold')
 
 "vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
