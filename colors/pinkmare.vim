@@ -1982,6 +1982,8 @@ call s:HL('RenderMarkdownH4Bg', s:palette.blue, s:palette.none, 'bold')
 call s:HL('RenderMarkdownH5Bg', s:palette.green, s:palette.none, 'bold')
 call s:HL('RenderMarkdownH6Bg', s:palette.orange, s:palette.none, 'bold')
 
+call s:HL('RenderMarkdownCode', s:palette.none, s:palette.none, 'bold')
+
 " Snacks
 call s:HL('SnacksPickerSearch', s:palette.orange, s:palette.none, 'bold')
 "vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
